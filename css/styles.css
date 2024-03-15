@@ -49,9 +49,7 @@ h3 {
 }
 
 .hero-container {
-  width: 1440px;
   height: 600px;
-  margin: 0 auto;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -62,26 +60,21 @@ h3 {
 
 .description-container {
   justify-content: center;
-  width: 1200px;
   height: 224px;
   margin-top: 120px;
   margin-bottom: 120px;
 }
 
 .pictures-container {
-  width: 1200px;
   height: 412px;
   margin-bottom: 120px;
 }
 
 .id-container {
-  width: 1200px;
   height: 780px;
 }
 
 .customers-logo {
-  width: 1200px;
-  height: 200px;
   margin-top: 120px;
   margin-bottom: 120px;
 }
@@ -251,7 +244,7 @@ body {
   transition: var(--transitions);
 }
 
-/* .hero button:focus, */
+.hero button:focus,
 .hero button:hover {
   background-color: var(--button-color-filters);
 }
@@ -288,7 +281,7 @@ body {
 
 .one ul {
   display: flex;
-  gap: 43px;
+  gap: 50px;
   list-style: none;
 }
 
@@ -304,7 +297,6 @@ body {
 .tehnologies {
   box-sizing: content-box;
   width: 264px;
-  height: 104px;
   margin-top: 8px;
 }
 
@@ -314,7 +306,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 264px;
   height: 112px;
   background-color: var(--accent-color-cloud);
   margin-bottom: 8px;
@@ -382,7 +373,6 @@ body {
 .team {
   display: flex;
   justify-content: space-evenly;
-  border-radius: 0px 0px 4px 4px;
   gap: 47px;
   padding-top: 72px;
   list-style: none;
@@ -412,7 +402,6 @@ body {
   width: 264px;
   height: 428px;
   border: 1px solid var(--accent-color-filters);
-  padding: 0 0 32px 0;
   text-align: center;
   background-color: var(--primary-color);
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -528,11 +517,9 @@ body {
 .group-company {
   display: flex;
   align-items: center;
-  justify-content: center;
   margin-top: 72px;
   gap: 37px;
   width: 1200px;
-  height: 88px;
 }
 /*---------------------------------------------------------*/
 
@@ -549,7 +536,6 @@ footer a {
   color: #f4f4fd;
   box-sizing: content-box;
   width: 264px;
-  height: 72px;
   padding-top: 16px;
 }
 
@@ -564,18 +550,13 @@ footer a {
 .logo-footer {
   box-sizing: content-box;
   width: 115px;
-  height: 24px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
   text-transform: uppercase;
   font-family: var(--second-family);
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
   letter-spacing: 0.03em;
-  text-align: left;
 }
 
 .logo-footer:focus,
@@ -585,23 +566,17 @@ footer a {
 }
 
 .footer-extras {
-  box-sizing: border-box;
   width: 264px;
   height: 112px;
-  padding-top: 100px;
+  margin-top: 100px;
 }
 
 .social-icons {
-  box-sizing: border-box;
   width: 208px;
   height: 80px;
   color: var(--accent-color-cloud);
   margin-top: 100px;
   margin-left: 150px;
-}
-
-.social-icons ul {
-  display: flex;
 }
 
 .social-media {
@@ -659,14 +634,12 @@ footer a {
 
 .email-box {
   display: flex;
-  align-items: center;
 }
 
 ::placeholder {
   font-size: 12px;
   letter-spacing: 0.04em;
   color: var(--primary-color);
-  opacity: 1;
 }
 
 .submit-container input {
@@ -902,3 +875,8 @@ input:checked + svg.checkbox-icon {
 }
 /*------------------- modal style end------------ */
 /*------------------------end---------------------------------*/
+/* @media screen and (min-width: 900px) {
+  body {
+    background-color: #31d0aa;
+  }
+} */
