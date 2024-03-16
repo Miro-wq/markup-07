@@ -49,13 +49,16 @@ h3 {
 }
 
 .hero-container {
+  width: 1440px; /*cerinta in tema 6 */
   height: 600px;
+  margin: 0 auto;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/office.png);
   background-size: cover;
+  background-position: center;
 }
 
 .description-container {
@@ -92,6 +95,14 @@ body {
   letter-spacing: 0.02em;
   margin: 0 auto;
   padding: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
 }
 /*---------------------------------------------------------*/
 
@@ -520,6 +531,7 @@ body {
   margin-top: 72px;
   gap: 37px;
   width: 1200px;
+  border: 3px solid red;
 }
 /*---------------------------------------------------------*/
 
@@ -875,8 +887,133 @@ input:checked + svg.checkbox-icon {
 }
 /*------------------- modal style end------------ */
 /*------------------------end---------------------------------*/
-/* @media screen and (min-width: 900px) {
-  body {
-    background-color: #31d0aa;
+
+/* ===============test========================= */
+@media screen and (max-width: 428px) {
+  .header-container,
+  .hero-container {
+    width: auto;
   }
-} */
+  .hero-container {
+    height: 432px;
+  }
+  .main-nav {
+    display: none;
+  }
+  .hero h1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 111%;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+    width: 320px;
+    height: 80px;
+    text-align: center;
+    padding-top: 112px;
+  }
+  .feature {
+    display: grid;
+    place-items: center;
+    margin-bottom: 30px;
+  }
+  .one {
+    display: block;
+    width: 396px;
+    height: 624px;
+    margin: 0 auto;
+    margin-bottom: 96px;
+  }
+  .one ul {
+    display: grid;
+    width: 396px;
+  }
+  .one h3 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 111%;
+    letter-spacing: 0.02em;
+  }
+  .one p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+  }
+  .strategy,
+  .punctuality,
+  .diligence,
+  .tehnologies {
+    width: 396px;
+    height: 48px;
+    text-align: center;
+  }
+  .vector-group {
+    display: none;
+  }
+  .pictures-container {
+    display: none;
+  }
+  .our-team {
+    margin-top: 96px;
+    padding: 0;
+  }
+  .id-container {
+    height: 2232px;
+  }
+  .team {
+    display: block;
+  }
+  .team-member {
+    margin-bottom: 72px;
+  }
+  /* =========================================== */
+  /* ======================este inca in teste*/
+  .customers {
+    height: 520px;
+  }
+  .group-company {
+    flex-direction: column;
+  }
+  /* ============================================= */
+  /*========================*/
+  .last-container {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 664px;
+    width: 428px;
+  }
+  .logo-footer {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .social-icons {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .submit-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    height: 136px;
+  }
+  .email-box {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .submit-container input {
+    margin: 0;
+    width: 398px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    opacity: 0.3;
+  }
+}
