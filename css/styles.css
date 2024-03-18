@@ -62,19 +62,17 @@ h3 {
 }
 
 .description-container {
-  justify-content: center;
-  height: 224px;
   margin-top: 120px;
   margin-bottom: 120px;
 }
 
 .pictures-container {
-  height: 412px;
+  height: 100%;
   margin-bottom: 120px;
 }
 
 .id-container {
-  height: 780px;
+  height: 100%;
 }
 
 .customers-logo {
@@ -83,10 +81,14 @@ h3 {
 }
 
 .last-container {
-  width: 1200px;
   display: flex;
-  height: 312px;
+  flex-wrap: wrap;
+  width: 1200px;
   margin: 0 auto;
+  justify-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 132px;
+  gap: 50px;
 }
 
 body {
@@ -287,19 +289,20 @@ body {
 .one {
   display: flex;
   justify-content: center;
-  list-style: none;
+  /* list-style: none; */
+  border: 3px solid red;
 }
 
 .one ul {
   display: flex;
-  gap: 50px;
-  list-style: none;
+  gap: 30px;
+  border: 3px solid violet;
 }
 
 .feature {
   list-style: none;
-  justify-content: center;
   width: 100%;
+  border: 3px solid black;
 }
 
 .strategy,
@@ -309,6 +312,7 @@ body {
   box-sizing: content-box;
   width: 264px;
   margin-top: 8px;
+  border: 3px solid green;
 }
 
 .vector-group {
@@ -343,9 +347,11 @@ body {
 
 .about ul.images {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   justify-content: center;
   gap: 59px;
+  border: 3px solid brown;
 }
 
 .about {
@@ -383,10 +389,13 @@ body {
 
 .team {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 47px;
-  padding-top: 72px;
+  padding-top: 4.5em;
+  padding-bottom: 4.5em;
   list-style: none;
+  border: 3px solid brown;
 }
 
 .card p {
@@ -526,18 +535,23 @@ body {
 }
 
 .group-company {
+  /*modificat atentie */
+  flex-wrap: wrap;
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
   margin-top: 72px;
-  gap: 37px;
-  width: 1200px;
-  border: 3px solid red;
+  gap: 30px;
+  width: 100%;
+  border: 3px solid brown;
 }
 /*---------------------------------------------------------*/
 
 /*--stilizare footer, logo si linkuri sociale--*/
-footer {
+.page-footer {
   background-color: var(--accent-color-text);
+  display: flex;
+  justify-content: center;
 }
 
 footer a {
@@ -577,18 +591,18 @@ footer a {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-extras {
+/* .footer-extras {
   width: 264px;
   height: 112px;
   margin-top: 100px;
-}
+} */
 
 .social-icons {
-  width: 208px;
-  height: 80px;
+  /* width: 208px;
+  height: 80px; */
   color: var(--accent-color-cloud);
-  margin-top: 100px;
-  margin-left: 150px;
+  /* margin-top: 100px;
+  margin-left: 150px; */
 }
 
 .social-media {
@@ -630,11 +644,12 @@ footer a {
 }
 
 /* --------------------subscribe-field------------------------------ */
-.submit-container {
-  margin-top: 100px;
-  margin-left: 125px;
+.submit-container,
+.subscribe {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
 }
-
 .subscribe {
   color: var(--primary-color);
   text-transform: capitalize;
@@ -646,6 +661,8 @@ footer a {
 
 .email-box {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 ::placeholder {
@@ -657,7 +674,6 @@ footer a {
 .submit-container input {
   background: var(--accent-color-text);
   border: none;
-  width: 243px;
   color: var(--primary-color);
   border-radius: 4px;
   width: 264px;
@@ -889,131 +905,3 @@ input:checked + svg.checkbox-icon {
 /*------------------------end---------------------------------*/
 
 /* ===============test========================= */
-@media screen and (max-width: 428px) {
-  .header-container,
-  .hero-container {
-    width: auto;
-  }
-  .hero-container {
-    height: 432px;
-  }
-  .main-nav {
-    display: none;
-  }
-  .hero h1 {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 111%;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    text-align: center;
-    width: 320px;
-    height: 80px;
-    text-align: center;
-    padding-top: 112px;
-  }
-  .feature {
-    display: grid;
-    place-items: center;
-    margin-bottom: 30px;
-  }
-  .one {
-    display: block;
-    width: 396px;
-    height: 624px;
-    margin: 0 auto;
-    margin-bottom: 96px;
-  }
-  .one ul {
-    display: grid;
-    width: 396px;
-  }
-  .one h3 {
-    text-align: center;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 111%;
-    letter-spacing: 0.02em;
-  }
-  .one p {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.02em;
-  }
-  .strategy,
-  .punctuality,
-  .diligence,
-  .tehnologies {
-    width: 396px;
-    height: 48px;
-    text-align: center;
-  }
-  .vector-group {
-    display: none;
-  }
-  .pictures-container {
-    display: none;
-  }
-  .our-team {
-    margin-top: 96px;
-    padding: 0;
-  }
-  .id-container {
-    height: 2232px;
-  }
-  .team {
-    display: block;
-  }
-  .team-member {
-    margin-bottom: 72px;
-  }
-  /* =========================================== */
-  /* ======================este inca in teste*/
-  .customers {
-    height: 520px;
-  }
-  .group-company {
-    flex-direction: column;
-  }
-  /* ============================================= */
-  /*========================*/
-  .last-container {
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 664px;
-    width: 428px;
-  }
-  .logo-footer {
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  .social-icons {
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .submit-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0;
-    height: 136px;
-  }
-  .email-box {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .submit-container input {
-    margin: 0;
-    width: 398px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    opacity: 0.3;
-  }
-}
