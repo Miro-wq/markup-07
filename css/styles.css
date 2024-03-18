@@ -644,10 +644,7 @@ footer a {
 }
 
 /* --------------------subscribe-field------------------------------ */
-.submit-container,
-.subscribe {
-  display: flex;
-  flex-wrap: wrap;
+.submit-container {
   align-content: center;
 }
 .subscribe {
