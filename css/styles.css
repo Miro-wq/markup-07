@@ -275,6 +275,7 @@ body {
   line-height: 24px;
   letter-spacing: 0.02em;
   text-align: left;
+  color: var(--accent-color-text);
 }
 
 .one p {
@@ -290,19 +291,16 @@ body {
   display: flex;
   justify-content: center;
   /* list-style: none; */
-  border: 3px solid red;
 }
 
 .one ul {
   display: flex;
   gap: 30px;
-  border: 3px solid violet;
 }
 
 .feature {
   list-style: none;
   width: 100%;
-  border: 3px solid black;
 }
 
 .strategy,
@@ -312,7 +310,6 @@ body {
   box-sizing: content-box;
   width: 264px;
   margin-top: 8px;
-  border: 3px solid green;
 }
 
 .vector-group {
@@ -351,7 +348,6 @@ body {
   list-style: none;
   justify-content: center;
   gap: 59px;
-  border: 3px solid brown;
 }
 
 .about {
@@ -395,7 +391,6 @@ body {
   padding-top: 4.5em;
   padding-bottom: 4.5em;
   list-style: none;
-  border: 3px solid brown;
 }
 
 .card p {
@@ -543,7 +538,6 @@ body {
   margin-top: 72px;
   gap: 30px;
   width: 100%;
-  border: 3px solid brown;
 }
 /*---------------------------------------------------------*/
 
@@ -808,7 +802,7 @@ footer a {
   margin-bottom: 8px;
 }
 
-input {
+input.focus {
   height: 40px;
   border-radius: 4px;
   width: 100%;
@@ -902,3 +896,177 @@ input:checked + svg.checkbox-icon {
 /*------------------------end---------------------------------*/
 
 /* ===============test========================= */
+@media screen and (max-width: 320px) {
+  /* in constructie */
+  body {
+    overflow-x: hidden;
+  }
+  .header-container {
+    border: 3px solid red;
+  }
+}
+@media screen and (max-width: 428px) {
+  /* mobile view*/
+  .submit-container input {
+    margin: 0;
+    min-width: 200px;
+    width: 90vw;
+    padding: 10px;
+    margin: 0;
+  }
+  .subscribe {
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+  }
+  .submit-container {
+    margin: 0;
+  }
+  .social-media {
+    display: flex;
+    justify-content: center;
+  }
+  .logo-footer {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .last-container {
+    display: flex;
+    justify-content: center;
+  }
+  .pictures-container {
+    display: none;
+  }
+  .vector-group,
+  .pictures-container {
+    display: none;
+  }
+  .one ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .feature {
+    display: contents;
+  }
+  .one p {
+    width: 90vw;
+    margin: 0;
+    margin-bottom: 18vw;
+  }
+  .one h3 {
+    font-size: 36px;
+    color: var(--accent-color-text);
+    font-weight: 700;
+  }
+  .hero-container {
+    width: 100%;
+  }
+  .hero h1 {
+    font-size: 10vw;
+    line-height: 1;
+    width: auto;
+    text-transform: capitalize;
+  }
+  .main-nav {
+    display: none;
+  }
+  .header-container {
+    max-width: 94%;
+    margin-left: 6vw;
+    display: flex;
+    justify-content: flex-start;
+  }
+  /* body {
+    overflow: scroll;
+  } */
+}
+@media screen and (min-width: 429px) and (max-width: 768px) {
+  /* tablet view */
+  .last-container {
+  }
+  .submit-container input {
+    padding: 10px;
+  }
+  .subscribe {
+    display: block;
+  }
+  .submit-container {
+    margin: 0;
+    padding-right: 70px;
+  }
+  .social-media {
+    display: flex;
+    justify-content: center;
+  }
+  .logo-footer {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .last-container {
+    display: flex;
+    justify-content: center;
+  }
+  .group-company {
+    width: 90vw;
+  }
+  .pictures-container {
+    display: none;
+  }
+  .vector-group,
+  .pictures-container {
+    display: none;
+  }
+  .feature {
+    box-sizing: border-box;
+    width: 340px;
+    padding: 1vw;
+  }
+  .one ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+  }
+  .one p {
+    width: 90%;
+    margin: 0;
+  }
+  .one h3 {
+    font-size: 36px;
+    color: var(--accent-color-text);
+    font-weight: 700;
+    margin-bottom: 1.5vw;
+  }
+  .hero-container {
+    width: 100%;
+  }
+  .hero h1 {
+    text-transform: capitalize;
+  }
+  .main-nav {
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+  .header-container {
+    max-width: 94%;
+    margin-left: 6vw;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .address ul li a {
+    border: 3px solid red;
+  }
+  .address {
+    border: 3px solid black;
+    display: flex;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1158) {
+  .team {
+    border: 3px solid red;
+  }
+}
