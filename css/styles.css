@@ -48,7 +48,7 @@ h3 {
 }
 
 .hero-container {
-  width: 1440px; /*cerinta in tema 6 */
+  width: 1440px;
   height: 600px;
   margin: 0 auto;
   background-image: linear-gradient(
@@ -637,6 +637,7 @@ footer a {
 .submit-container {
   align-content: center;
 }
+
 .subscribe {
   color: var(--primary-color);
   text-transform: capitalize;
@@ -1022,7 +1023,8 @@ input:checked + svg.checkbox-icon {
 .modal-icon-list .icon:focus {
   background-color: var(--icons-color-hover);
 }
-.mobile-menu .link:hover .mobile-menu .link:focus {
+.mobile-menu .link:hover,
+.mobile-menu .link:focus {
   color: var(--button-color-filters);
 }
 .tel:hover,
@@ -1049,6 +1051,15 @@ input:checked + svg.checkbox-icon {
   }
   body {
     overflow-x: hidden;
+  }
+  .modal-icon-list {
+    gap: 24px;
+  }
+  .modal-contacts {
+    margin-top: 180px;
+  }
+  .tel {
+    font-size: 27px;
   }
   .container {
     min-width: 160px !important;
@@ -1133,9 +1144,6 @@ input:checked + svg.checkbox-icon {
 }
 @media screen and (min-width: 429px) and (max-width: 768px) {
   /* tablet view */
-
-  /* .last-container {
-  } */
   .submit-container input {
     padding: 10px;
   }

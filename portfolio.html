@@ -27,6 +27,96 @@
           <span class="web">web</span>
           <span class="studio">studio</span>
         </a>
+        <div class="container">
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="close-btn js-close-menu">&times;</button>
+
+            <nav class="mobile-menu">
+              <ul>
+                <li><a href="index.html" class="link">Studio</a></li>
+                <li><a href="portfolio.html" class="link">Portfolio</a></li>
+                <li><a href="contacts.html" class="link">Contacts</a></li>
+              </ul>
+            </nav>
+            <div class="mobile-contact">
+              <ul class="modal-contacts">
+                <li>
+                  <a class="tel" href="tel:+110011112111">+1 (000) 1111-1111</a>
+                </li>
+                <li>
+                  <a class="mailto" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="modal-icon-list">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="icon"
+                aria-label="instagram-link"
+                ><svg>
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-instagram"
+                  ></use></svg
+              ></a>
+              <a
+                href="https://www.twitter.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="icon"
+                aria-label="facebook-link"
+                ><svg>
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-twitter"
+                  ></use></svg
+              ></a>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="icon"
+                aria-label="instagram-link"
+                ><svg>
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-facebook"
+                  ></use></svg
+              ></a>
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="icon"
+                aria-label="facebook-link"
+                ><svg>
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-linkedin"
+                  ></use></svg
+              ></a>
+            </div>
+          </div>
+        </div>
         <div class="main-nav">
           <nav>
             <ul>
@@ -53,21 +143,19 @@
     </header>
     <!--sectiune butoane navigatie-->
     <main>
-      <section class="filters">
-        <div class="navigation-container">
-          <nav>
-            <ul>
-              <li><button type="button" class="button1">All</button></li>
-              <li><button type="button" class="button2">Web Site</button></li>
-              <li><button type="button" class="button3">App</button></li>
-              <li><button type="button" class="button4">Design</button></li>
-              <li><button type="button" class="button5">Marketing</button></li>
-            </ul>
-          </nav>
-        </div>
-      </section>
-      <!--sectiune imagini primul rand-->
-      <section class="row-1">
+      <div class="navigation-container filters">
+        <nav>
+          <ul>
+            <li><button type="button" class="button1">All</button></li>
+            <li><button type="button" class="button2">Web Site</button></li>
+            <li><button type="button" class="button3">App</button></li>
+            <li><button type="button" class="button4">Design</button></li>
+            <li><button type="button" class="button5">Marketing</button></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- imagini rand 1 -->
+      <section class="cards">
         <div class="first-line-container">
           <ul>
             <li class="card1">
@@ -127,13 +215,7 @@
               <h3>Meditation App</h3>
               <p>App</p>
             </li>
-          </ul>
-        </div>
-      </section>
-      <!--sectiune imagini al doilea rand-->
-      <section class="row-2">
-        <div class="second-line-container">
-          <ul>
+            <!-- imagini rand 2 -->
             <li class="card4">
               <div class="image-container">
                 <img
@@ -191,13 +273,7 @@
               <h3>Online Courses</h3>
               <p>Marketing</p>
             </li>
-          </ul>
-        </div>
-      </section>
-      <!--sectiune imagini al treilea rand-->
-      <section class="row-3">
-        <div class="third-line-container">
-          <ul>
+            <!-- imagini rand 3 -->
             <li class="card7">
               <div class="image-container">
                 <img
@@ -348,5 +424,15 @@
         </div>
       </div>
     </footer>
+
+    <script defer src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
