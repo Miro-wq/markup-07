@@ -14,8 +14,8 @@ Converting a Figma design into a functional website, extract assets, measure dis
 - Adding more features and responsivnes
 
 
-## 🛠 Tools
-[![My Skills](https://skillicons.dev/icons?i=html,css,)](https://skillicons.dev)
+## 🛠 Tools 
+[![My Skills](https://skillicons.dev/icons?i=js,html,css,)](https://skillicons.dev)
 
 
 ## Optimizations
