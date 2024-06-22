@@ -1,6 +1,6 @@
 # About The Project
 
-This is a homework project for the Full Stack Developer course, focused on creating a static web page. The project involves replicating the WebStudio page design provided in Figma.
+This is a homework project, focused on creating a static web page. The project involves replicating the WebStudio page design provided in Figma.
 
 ## Lessons Learned
 
@@ -14,8 +14,8 @@ Converting a Figma design into a functional website, extract assets, measure dis
 - Adding more features and responsivnes
 
 
-## 🛠 Tools 
-[![My Skills](https://skillicons.dev/icons?i=js,html,css,)](https://skillicons.dev)
+## 🛠 Tools
+[![My Skills](https://skillicons.dev/icons?i=html,css,js)](https://skillicons.dev)
 
 
 ## Optimizations
